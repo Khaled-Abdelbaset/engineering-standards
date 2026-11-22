@@ -29,6 +29,8 @@
 4. **Enforcement** (must run typecheck, block force-push) → CI and branch protection, not hopeful prose.
 5. **Update together:** change handbook first, then `AGENTS.md`, then Cursor/Claude rule mirrors in the same PR when behavior changes.
 
+**Git commits:** Agents must **not** append `Co-authored-by: Cursor` (or any AI co-author). Commits and PR titles are human-facing — no “written by AI” attribution in git history.
+
 ---
 
 ## New repo bootstrap

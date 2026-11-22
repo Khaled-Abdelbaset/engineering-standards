@@ -47,6 +47,8 @@ Use **Conventional Commits**: `feat(backend): …`, `fix(frontend): …`, `chore
 
 Never commit secrets (`.env`, credentials) or build artifacts (`dist`, `.next`).
 
+**Human-authored commits only:** Do not add `Co-authored-by` trailers for Cursor, Claude, or any AI tool. Disable “add co-author” in the editor if it is on. Write subjects and bodies for human reviewers — describe the product change, not which tool wrote the patch (OK to name files like `AGENTS.md` when that is what changed).
+
 ---
 
 ## 4. Pull request workflow
