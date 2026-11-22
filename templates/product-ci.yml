@@ -1,0 +1,16 @@
+# Copy to .github/workflows/ci.yml in a product repo — update flavor.
+# Standards version: v1.0.0
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    uses: Khaled-Abdelbaset/engineering-standards/.github/workflows/reusable-node-ci.yml@v1.0.0
+    with:
+      flavor: nest
+      # flavor: next   # frontend
