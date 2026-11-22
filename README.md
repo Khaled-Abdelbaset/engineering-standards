@@ -16,7 +16,7 @@ Central **process documentation** and **reusable GitHub Actions** for repositori
 | [docs/AGENT_INSTRUCTIONS.md](docs/AGENT_INSTRUCTIONS.md) | `AGENTS.md`, Claude/Cursor rules, skills layering |
 | [docs/SETUP_GITHUB.md](docs/SETUP_GITHUB.md) | One-time publish / push notes |
 | [.github/workflows/reusable-node-ci.yml](.github/workflows/reusable-node-ci.yml) | `workflow_call` — Nest (`flavor: nest`) or Next (`flavor: next`) |
-| [templates/](templates/) | `AGENTS.md` flavors, `CLAUDE.md`, `.claude/rules`, Cursor rule, CI YAML, `CONTRIBUTING` stub |
+| [templates/](templates/) | `agents/AGENTS.*.md`, `CLAUDE.md`, `.claude/rules`, Cursor rule, CI YAML, `CONTRIBUTING` stub |
 
 ---
 
