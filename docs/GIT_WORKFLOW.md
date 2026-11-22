@@ -107,8 +107,30 @@ On `main`: require PR, require **build** check, disallow force push. See [NEW_PR
 
 ---
 
-## 10. Agents (Cursor)
+## 10. Agents (Claude Code, Cursor, others)
 
-- Authoritative rules: copy `templates/cursor/git-workflow.mdc` into product repos.
+**Layout:** [AGENT_INSTRUCTIONS.md](AGENT_INSTRUCTIONS.md)
+
+| Artifact | Copy from |
+|----------|-----------|
+| `AGENTS.md` (repo root) | `templates/agents/AGENTS.next.md` or `AGENTS.nest.md` |
+| `CLAUDE.md` | `templates/CLAUDE.md` |
+| `.claude/rules/git-workflow.md` | `templates/claude/rules/git-workflow.md` |
+| `.cursor/rules/git-workflow.mdc` | `templates/cursor/git-workflow.mdc` |
+
+- **Handbook stays canonical** — agent files are short mirrors + commands.
 - Do not push/merge without explicit user request.
 - Pin reusable workflow version when editing CI.
+
+---
+
+## 11. Large initiatives (multi-phase work)
+
+For refactors or epics split into phases (e.g. UI Operate rollout):
+
+1. **Tracker** in the product repo: `docs/<name>-TRACKER.md` (scope table, branch names, status).
+2. **One phase → one branch → one PR** (`feat/ui-…`, `feat/api-…`).
+3. **Commit** when that phase passes local gates (§6); do not pile the next phase uncommitted on the same branch.
+4. **Merge order:** merge phase *N−1* first, or open stacked PRs (phase 2 base = phase 1 branch) then retarget to `main`.
+
+Conventional Commits per phase; PR title/body name the phase.

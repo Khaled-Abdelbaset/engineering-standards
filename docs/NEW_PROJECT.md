@@ -35,6 +35,19 @@ Settings → Branches → Add rule:
 3. Set git email: [GIT_IDENTITY.md](GIT_IDENTITY.md).
 4. Install [GitHub CLI](https://cli.github.com/) for `gh pr create` (optional).
 
+## 4b. Agent instructions (Claude Code + Cursor)
+
+Ship the **agent bundle** in every product repo (templates already include it):
+
+| File | Source |
+|------|--------|
+| `AGENTS.md` | `templates/agents/AGENTS.next.md` or `AGENTS.nest.md` |
+| `CLAUDE.md` | `templates/CLAUDE.md` |
+| `.claude/rules/git-workflow.md` | `templates/claude/rules/git-workflow.md` |
+| `.cursor/rules/git-workflow.mdc` | `templates/cursor/git-workflow.mdc` |
+
+Details: [AGENT_INSTRUCTIONS.md](AGENT_INSTRUCTIONS.md). Add `.gitignore` entries for `CLAUDE.local.md` if teammates use it.
+
 ## 5. Cross-repo APIs (backend + frontend)
 
 See [GIT_WORKFLOW.md §8](GIT_WORKFLOW.md) — merge/deploy backend first on breaking API changes.

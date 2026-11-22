@@ -13,9 +13,10 @@ Central **process documentation** and **reusable GitHub Actions** for repositori
 | [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md) | Branching, commits, PRs, cross-repo order, quality gates |
 | [docs/NEW_PROJECT.md](docs/NEW_PROJECT.md) | New repo checklist (secrets, branch protection, templates) |
 | [docs/GIT_IDENTITY.md](docs/GIT_IDENTITY.md) | Git author email vs GitHub account |
+| [docs/AGENT_INSTRUCTIONS.md](docs/AGENT_INSTRUCTIONS.md) | `AGENTS.md`, Claude/Cursor rules, skills layering |
 | [docs/SETUP_GITHUB.md](docs/SETUP_GITHUB.md) | One-time publish / push notes |
 | [.github/workflows/reusable-node-ci.yml](.github/workflows/reusable-node-ci.yml) | `workflow_call` — Nest (`flavor: nest`) or Next (`flavor: next`) |
-| [templates/](templates/) | PR template, Discord notify YAML, Cursor rule, `CONTRIBUTING` stub |
+| [templates/](templates/) | `agents/AGENTS.*.md`, `CLAUDE.md`, `.claude/rules`, Cursor rule, CI YAML, `CONTRIBUTING` stub |
 
 ---
 
@@ -75,7 +76,7 @@ When this repo changes workflows, tag `v1.x.x` and bump the ref in product repos
 
 - **Developers** — before first commit: [GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md) + [GIT_IDENTITY.md](docs/GIT_IDENTITY.md)
 - **Maintainers** — new repo: [NEW_PROJECT.md](docs/NEW_PROJECT.md)
-- **Agents / Cursor** — [templates/cursor/git-workflow.mdc](templates/cursor/git-workflow.mdc)
+- **Agents (Claude + Cursor)** — [AGENT_INSTRUCTIONS.md](docs/AGENT_INSTRUCTIONS.md) + repo `AGENTS.md`
 
 ---
 
